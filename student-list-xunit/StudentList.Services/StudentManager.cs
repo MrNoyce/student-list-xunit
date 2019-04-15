@@ -5,7 +5,10 @@ namespace StudentList.Services
     public class StudentManager
     {
         private StudentStorage _storage;
-        
+        private const char StudentEntryDelimiter = ',';
+        private Random _rand;
+        private string _studentList;
+
         public StudentManager()
         {
             _storage = new StudentStorage();
