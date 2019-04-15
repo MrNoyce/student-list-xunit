@@ -22,7 +22,7 @@ namespace StudentList.Tests
             var sut = new StudentManager(mockStorage.Object);
 
             //Act
-            var actual = sut.GetAllStudents();
+            var actual = sut.Students;
 
             //Assert
             Assert.IsType(typeof(string[]), actual);
@@ -39,7 +39,7 @@ namespace StudentList.Tests
             var sut = new StudentManager(mockStorage.Object);
 
             //Act
-            var actual = sut.CountStudents();
+            var actual = sut.Students.Length;
 
             //Assert
             Assert.Equal(actual, 3);

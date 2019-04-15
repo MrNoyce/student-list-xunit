@@ -8,38 +8,52 @@ namespace StudentList.Services
         private const char StudentEntryDelimiter = ',';
         private Random _rand;
         private string _studentList;
-
-        public StudentManager()
-        {
-            _storage = new StudentStorage();
-        }
-
         public StudentManager(StudentStorage storage)
         {
             _storage = storage;
-        }
-        public string [] GetAllStudents()
-        {
-            var studentList = _storage.LoadStudentList();
-            return studentList.Split(',');  
+            _rand = new Random();
+            _studentList = _storage.LoadStudentList();
         }
 
-        public int CountStudents()
+        public string [] Students
         {
-            var studentList = _storage.LoadStudentList();
-            return studentList.Split(',').Length;
-            //throw new NotImplementedException("Write some tests");
+            get
+            {
+                return _studentList.Split(StudentEntryDelimiter);
+            }
         }
+
+        // Old implementation of Count and GetStudent
+        #region
+        // public string [] GetAllStudents()
+        // {
+        //     var studentList = _storage.LoadStudentList();
+        //     return studentList.Split(',');  
+        // }
+
+        // public int CountStudents()
+        // {
+        //     var studentList = _storage.LoadStudentList();
+        //     return studentList.Split(',').Length;
+        //     //throw new NotImplementedException("Write some tests");
+        // }
+        #endregion
 
         public string PickRandomStudent()
         {
-            var studentList = _storage.LoadStudentList();
-            var students = studentList.Split(',');
+            var randIndex = _rand.Next(0,this.Students.Length);
+            return this.Students[randIndex];
 
-            var rand = new Random();
-            var randIndex = rand.Next(0, students.Length);
-            return students[randIndex];
-            //throw new NotImplementedException("Write some tests");
+            // Old implementation of GetRandomStudent
+            #region 
+            // var studentList = _storage.LoadStudentList();
+            // var students = studentList.Split(',');
+
+            // var rand = new Random();
+            // var randIndex = rand.Next(0, students.Length);
+            // return students[randIndex];
+            // //throw new NotImplementedException("Write some tests");
+#endregion
         }
     }
 }
