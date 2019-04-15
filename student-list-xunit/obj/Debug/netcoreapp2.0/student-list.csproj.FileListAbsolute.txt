@@ -1,0 +1,2 @@
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\obj\Debug\netcoreapp2.0\student-list.csprojAssemblyReference.cache
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\obj\Debug\netcoreapp2.0\student-list.csproj.CoreCompileInputs.cache

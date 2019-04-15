@@ -1,0 +1,14 @@
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit-1\StudentList.Services\bin\Debug\netstandard2.0\StudentList.Services.deps.json
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit-1\StudentList.Services\bin\Debug\netstandard2.0\StudentList.Services.dll
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit-1\StudentList.Services\bin\Debug\netstandard2.0\StudentList.Services.pdb
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit-1\StudentList.Services\obj\Debug\netstandard2.0\StudentList.Services.csprojAssemblyReference.cache
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit-1\StudentList.Services\obj\Debug\netstandard2.0\StudentList.Services.csproj.CoreCompileInputs.cache
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit-1\StudentList.Services\obj\Debug\netstandard2.0\StudentList.Services.dll
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit-1\StudentList.Services\obj\Debug\netstandard2.0\StudentList.Services.pdb
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\StudentList.Services\bin\Debug\netstandard2.0\StudentList.Services.deps.json
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\StudentList.Services\bin\Debug\netstandard2.0\StudentList.Services.dll
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\StudentList.Services\bin\Debug\netstandard2.0\StudentList.Services.pdb
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\StudentList.Services\obj\Debug\netstandard2.0\StudentList.Services.csprojAssemblyReference.cache
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\StudentList.Services\obj\Debug\netstandard2.0\StudentList.Services.csproj.CoreCompileInputs.cache
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\StudentList.Services\obj\Debug\netstandard2.0\StudentList.Services.dll
+C:\Users\MrPanda\Desktop\EDX\WritingProfCode\local-repo\student-list-xunit\StudentList.Services\obj\Debug\netstandard2.0\StudentList.Services.pdb

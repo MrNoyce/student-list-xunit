@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\MrPanda\\Desktop\\EDX\\WritingProfCode\\local-repo\\student-list-xunit\\StudentList.Tests\\StudentList.Tests.csproj",
+  "TargetFramework": "netcoreapp2.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
