@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace StudentList.Services
 {
@@ -55,5 +56,20 @@ namespace StudentList.Services
             // //throw new NotImplementedException("Write some tests");
 #endregion
         }
+
+        public bool StudentExist(string student)
+        {
+            var students = _studentList.Split(StudentEntryDelimiter);
+
+            //Using the 'Any' LINQ Method to return whether or not
+            // any item matches the given predicate.
+            if(students.Any(s => s.Trim() == student))
+            {
+                return true;
+            }
+            
+            return false;
+        }
+            //throw new NotImplementedException("write test");
     }
 }

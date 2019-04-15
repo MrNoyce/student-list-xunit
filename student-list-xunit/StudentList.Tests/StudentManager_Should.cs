@@ -62,5 +62,34 @@ namespace StudentList.Tests
 
         }
 
+
+        [Fact]
+        public void ReturTrue_When_SearchingForExisting_Student()
+        {
+            //Arrange
+            var sut = new StudentManager(mockStorage.Object);
+            var existingStudent = "student1"; // This student is setup in mock student storage object
+
+            //Act
+            var actual = sut.StudentExist(existingStudent);
+
+            //Assert
+            Assert.True(actual);
+        } 
+
+        [Fact]
+        public void ReturnFalse_When_SearchForNonExisting_Student()
+        {
+        //Given || Act
+        var sut = new StudentManager(mockStorage.Object);
+        var fakeStudent = "NotRealPerson";
+        
+        //When || Act
+        var actual = sut.StudentExist(fakeStudent);
+        
+        //Then || Assert
+        Assert.False(actual);
+
+        }
     }
 }
