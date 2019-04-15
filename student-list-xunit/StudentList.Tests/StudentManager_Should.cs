@@ -91,5 +91,21 @@ namespace StudentList.Tests
         Assert.False(actual);
 
         }
+
+        [Fact]
+        public void Call_UpdateStudentList_When_StudentAdded()
+        {
+        //Given || Arrange
+        var sut = new StudentManager(mockStorage.Object);
+        var originalList = mockStorage.Object.LoadStudentList();
+        var newStudent = "Bradley Noyce";
+        var updatedList = originalList + "," + newStudent;
+        
+        //When || Act
+        sut.AddStudent(newStudent);
+        
+        //Then || Act
+        mockStorage.Verify(x => x.UpdateStudentList(updatedList));
+        }
     }
 }

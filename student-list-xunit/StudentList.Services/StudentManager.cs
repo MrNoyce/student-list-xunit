@@ -59,17 +59,21 @@ namespace StudentList.Services
 
         public bool StudentExist(string student)
         {
-            var students = _studentList.Split(StudentEntryDelimiter);
 
             //Using the 'Any' LINQ Method to return whether or not
             // any item matches the given predicate.
-            if(students.Any(s => s.Trim() == student))
+            if(this.Students.Any(s => s.Trim() == student))
             {
                 return true;
             }
             
             return false;
         }
-            //throw new NotImplementedException("write test");
+        
+        public void AddStudent(string newStudent)
+        {
+            _studentList += "," + newStudent;
+            _storage.UpdateStudentList(_studentList);
+        }
     }
 }
