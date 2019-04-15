@@ -9,4 +9,7 @@
   <ItemGroup>
     <PackageReference Include="moq" Version="4.10.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudentList.Tests\StudentList.Tests.csproj">
 </Project>
